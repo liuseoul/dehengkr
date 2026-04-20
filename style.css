@@ -2,15 +2,15 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --black:   #0a0a0a;
-  --dark:    #111318;
-  --mid:     #1e2028;
-  --gray-bg: #f5f5f3;
-  --border:  #e8e8e4;
-  --text:    #1a1a1a;
-  --muted:   #6b6b6b;
-  --gold:    #b8973a;
-  --gold-lt: #d4b054;
+  --black:   #091509;
+  --dark:    #164516;
+  --mid:     #1d561d;
+  --gray-bg: #f3f5f1;
+  --border:  #dde3d8;
+  --text:    #1a2e1a;
+  --muted:   #5a7055;
+  --gold:    #CFB282;
+  --gold-lt: #dcc49a;
   --white:   #ffffff;
   --radius:  4px;
   --font-body: 'Inter', system-ui, sans-serif;
