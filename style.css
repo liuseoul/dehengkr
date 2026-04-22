@@ -136,6 +136,29 @@ img { display: block; max-width: 100%; }
 }
 .nav-links a:hover { color: var(--white); }
 
+/* Language switcher */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 8px;
+}
+.lang-btn {
+  background: none;
+  border: 1px solid rgba(255,255,255,0.18);
+  color: rgba(255,255,255,0.5);
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 5px 9px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+.lang-btn:hover { border-color: rgba(255,255,255,0.4); color: rgba(255,255,255,0.8); }
+.lang-btn.active { border-color: var(--gold); color: var(--gold); background: rgba(207,178,130,0.08); }
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -255,7 +278,7 @@ img { display: block; max-width: 100%; }
 }
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0;
 }
 .stat {
@@ -539,16 +562,16 @@ img { display: block; max-width: 100%; }
 }
 .city-item {
   background: var(--white);
-  padding: 14px 12px;
+  padding: 16px 14px;
   display: flex;
   flex-direction: column;
-  gap: 3px;
-  font-size: 0.88rem;
+  gap: 4px;
+  font-size: 1.05rem;
   font-weight: 500;
   color: var(--text);
 }
 .city-item span {
-  font-size: 0.68rem;
+  font-size: 0.8rem;
   color: var(--muted);
   font-weight: 400;
 }
@@ -831,11 +854,8 @@ img { display: block; max-width: 100%; }
     align-items: flex-start;
   }
   .nav-links.open a { font-size: 1.1rem; color: var(--white); }
-  .stats-grid { grid-template-columns: repeat(2, 1fr); }
-  .stat { border-right: 1px solid rgba(255,255,255,0.06); }
-  .stat:nth-child(2n) { border-right: none; }
-  .stat:nth-child(1),
-  .stat:nth-child(2) { border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .stats-grid { grid-template-columns: 1fr; }
+  .stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.06); }
   .cases-grid { grid-template-columns: 1fr; }
   .contact-inner { grid-template-columns: 1fr; gap: 48px; }
   .form-row { grid-template-columns: 1fr; }

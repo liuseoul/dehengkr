@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DeHeng Korea — Investment & Business Advisory</title>
+  <title>DeHeng Korea — Investment &amp; Business Advisory</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <!-- non-blocking font load: page text renders immediately with system fonts, then swaps -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600&display=swap" /></noscript>
   <link rel="stylesheet" href="style.css" />
@@ -21,12 +20,17 @@
         <span class="logo-text">DeHeng Korea</span>
       </a>
       <ul class="nav-links">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#network">Global Network</a></li>
-        <li><a href="#cases">Success Cases</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+        <li><a href="#services" data-i18n="nav_services">Services</a></li>
+        <li><a href="#network" data-i18n="nav_network">Global Network</a></li>
+        <li><a href="#cases" data-i18n="nav_cases">Success Cases</a></li>
+        <li><a href="#about" data-i18n="nav_about">About</a></li>
+        <li><a href="#contact" class="btn-nav" data-i18n="nav_contact">Contact Us</a></li>
       </ul>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ko">한국어</button>
+        <button class="lang-btn" data-lang="zh">中文</button>
+      </div>
       <button class="nav-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -36,20 +40,20 @@
   <!-- ═══════════════════════════════ HERO ══════════════════════════════ -->
   <section class="hero">
     <div class="container hero-inner">
-      <p class="hero-eyebrow">Investment &amp; Business Advisory · Seoul</p>
-      <h1 class="hero-title">
+      <p class="hero-eyebrow" data-i18n="hero_eyebrow">Investment &amp; Business Advisory · Seoul</p>
+      <h1 class="hero-title" data-i18n-html="hero_title">
         Precise counsel.<br />
         Global reach.<br />
         <em>Delivered on time.</em>
       </h1>
-      <p class="hero-sub">
+      <p class="hero-sub" data-i18n-html="hero_sub">
         DeHeng Korea provides institutional-grade investment consulting and
         business due diligence, backed by a holding group spanning
-        <strong>14 major cities</strong> across four continents.
+        <strong>62 offices</strong> across four continents.
       </p>
       <div class="hero-cta">
-        <a href="#contact" class="btn-primary">Start a Conversation</a>
-        <a href="#services" class="btn-ghost">Our Services ↓</a>
+        <a href="#contact" class="btn-primary" data-i18n="hero_cta">Start a Conversation</a>
+        <a href="#services" class="btn-ghost" data-i18n="hero_ghost">Our Services ↓</a>
       </div>
     </div>
     <div class="hero-ticker">
@@ -61,12 +65,11 @@
         <span>Tokyo</span><span class="dot">·</span>
         <span>Dubai</span><span class="dot">·</span>
         <span>Silicon Valley</span><span class="dot">·</span>
-        <span>Sydney</span><span class="dot">·</span>
         <span>New York</span><span class="dot">·</span>
         <span>Paris</span><span class="dot">·</span>
-        <span>Frankfurt</span><span class="dot">·</span>
+        <span>Brussels</span><span class="dot">·</span>
         <span>Almaty</span><span class="dot">·</span>
-        <!-- duplicate for seamless loop -->
+        <span>Vientiane</span><span class="dot">·</span>
         <span>Seoul</span><span class="dot">·</span>
         <span>Beijing</span><span class="dot">·</span>
         <span>Shanghai</span><span class="dot">·</span>
@@ -74,11 +77,11 @@
         <span>Tokyo</span><span class="dot">·</span>
         <span>Dubai</span><span class="dot">·</span>
         <span>Silicon Valley</span><span class="dot">·</span>
-        <span>Sydney</span><span class="dot">·</span>
         <span>New York</span><span class="dot">·</span>
         <span>Paris</span><span class="dot">·</span>
-        <span>Frankfurt</span><span class="dot">·</span>
+        <span>Brussels</span><span class="dot">·</span>
         <span>Almaty</span><span class="dot">·</span>
+        <span>Vientiane</span><span class="dot">·</span>
       </div>
     </div>
   </section>
@@ -87,20 +90,16 @@
   <section class="stats-bar">
     <div class="container stats-grid">
       <div class="stat">
-        <span class="stat-num">14+</span>
-        <span class="stat-label">Global Offices</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">4</span>
-        <span class="stat-label">Continents</span>
+        <span class="stat-num">62+</span>
+        <span class="stat-label" data-i18n="stat_offices_label">Global Offices</span>
       </div>
       <div class="stat">
         <span class="stat-num">100%</span>
-        <span class="stat-label">On-Time Delivery</span>
+        <span class="stat-label" data-i18n="stat_delivery_label">On-Time Delivery</span>
       </div>
       <div class="stat">
         <span class="stat-num">₩ · $ · ¥ · €</span>
-        <span class="stat-label">Multi-Currency Advisory</span>
+        <span class="stat-label" data-i18n="stat_currency_label">Multi-Currency Advisory</span>
       </div>
     </div>
   </section>
@@ -109,9 +108,9 @@
   <section class="section" id="services">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">What We Do</span>
-        <h2 class="section-title">Core Services</h2>
-        <p class="section-desc">
+        <span class="section-tag" data-i18n="svc_tag">What We Do</span>
+        <h2 class="section-title" data-i18n="svc_title">Core Services</h2>
+        <p class="section-desc" data-i18n="svc_desc">
           Every engagement is scoped precisely, staffed from the right offices,
           and delivered with a single accountable point of contact in Seoul.
         </p>
@@ -122,13 +121,13 @@
           <div class="service-icon">
             <svg viewBox="0 0 40 40" fill="none"><path d="M8 32 L20 14 L28 22 L36 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="36" cy="8" r="3" fill="currentColor"/></svg>
           </div>
-          <h3>Investment Consulting</h3>
-          <p>Market entry analysis, asset valuation, cross-border structuring, and strategic capital advisory for institutional and corporate clients operating in or targeting Korea and the broader Asia-Pacific corridor.</p>
+          <h3 data-i18n="svc1_title">Investment Consulting</h3>
+          <p data-i18n="svc1_desc">Market entry analysis, asset valuation, cross-border structuring, and strategic capital advisory for institutional and corporate clients operating in or targeting Korea and the broader Asia-Pacific corridor.</p>
           <ul class="service-list">
-            <li>Cross-border M&amp;A advisory</li>
-            <li>Korea market entry strategy</li>
-            <li>Asset &amp; portfolio valuation</li>
-            <li>Capital structure optimization</li>
+            <li data-i18n="svc1_li1">Cross-border M&amp;A advisory</li>
+            <li data-i18n="svc1_li2">Korea market entry strategy</li>
+            <li data-i18n="svc1_li3">Asset &amp; portfolio valuation</li>
+            <li data-i18n="svc1_li4">Capital structure optimization</li>
           </ul>
         </div>
 
@@ -136,13 +135,13 @@
           <div class="service-icon">
             <svg viewBox="0 0 40 40" fill="none"><rect x="6" y="10" width="28" height="22" rx="2" stroke="currentColor" stroke-width="2.5"/><path d="M13 10V7M27 10V7M6 18h28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="14" cy="25" r="2" fill="currentColor"/><circle cx="20" cy="25" r="2" fill="currentColor"/><circle cx="26" cy="25" r="2" fill="currentColor"/></svg>
           </div>
-          <h3>Business Due Diligence</h3>
-          <p>Comprehensive financial, legal, operational, and reputational due diligence conducted by multidisciplinary teams, with access to on-the-ground resources across all holding group offices.</p>
+          <h3 data-i18n="svc2_title">Business Due Diligence</h3>
+          <p data-i18n="svc2_desc">Comprehensive financial, legal, operational, and reputational due diligence conducted by multidisciplinary teams, with access to on-the-ground resources across all holding group offices.</p>
           <ul class="service-list">
-            <li>Financial &amp; legal DD</li>
-            <li>Management background checks</li>
-            <li>Regulatory compliance review</li>
-            <li>ESG &amp; risk assessment</li>
+            <li data-i18n="svc2_li1">Financial &amp; legal DD</li>
+            <li data-i18n="svc2_li2">Management background checks</li>
+            <li data-i18n="svc2_li3">Regulatory compliance review</li>
+            <li data-i18n="svc2_li4">ESG &amp; risk assessment</li>
           </ul>
         </div>
 
@@ -150,13 +149,13 @@
           <div class="service-icon">
             <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="13" stroke="currentColor" stroke-width="2.5"/><path d="M20 7v13l8 5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <h3>Transaction Support</h3>
-          <p>End-to-end support for complex cross-border transactions: deal origination, coordination with local regulators, closing facilitation, and post-deal integration guidance.</p>
+          <h3 data-i18n="svc3_title">Transaction Support</h3>
+          <p data-i18n="svc3_desc">End-to-end support for complex cross-border transactions: deal origination, coordination with local regulators, closing facilitation, and post-deal integration guidance.</p>
           <ul class="service-list">
-            <li>Deal structuring &amp; negotiation</li>
-            <li>Regulatory liaison (Korea, China, SEA)</li>
-            <li>Post-merger integration</li>
-            <li>Dispute resolution support</li>
+            <li data-i18n="svc3_li1">Deal structuring &amp; negotiation</li>
+            <li data-i18n="svc3_li2">Regulatory liaison (Korea, China, SEA)</li>
+            <li data-i18n="svc3_li3">Post-merger integration</li>
+            <li data-i18n="svc3_li4">Dispute resolution support</li>
           </ul>
         </div>
 
@@ -168,29 +167,29 @@
   <section class="section section--dark" id="why">
     <div class="container">
       <div class="section-header section-header--light">
-        <span class="section-tag">Our Commitment</span>
-        <h2 class="section-title">Why Clients Choose Us</h2>
+        <span class="section-tag" data-i18n="why_tag">Our Commitment</span>
+        <h2 class="section-title" data-i18n="why_title">Why Clients Choose Us</h2>
       </div>
       <div class="pillars-grid">
         <div class="pillar">
           <span class="pillar-num">01</span>
-          <h3>Client-First Scope</h3>
-          <p>Every mandate is scoped around your objective, not a standard product shelf. We ask more before we propose.</p>
+          <h3 data-i18n="p1_title">Client-First Scope</h3>
+          <p data-i18n="p1_desc">Every mandate is scoped around your objective, not a standard product shelf. We ask more before we propose.</p>
         </div>
         <div class="pillar">
           <span class="pillar-num">02</span>
-          <h3>On-Time, Every Time</h3>
-          <p>Deadline discipline is non-negotiable. We staff projects to deliver — not to extend.</p>
+          <h3 data-i18n="p2_title">On-Time, Every Time</h3>
+          <p data-i18n="p2_desc">Deadline discipline is non-negotiable. We staff projects to deliver — not to extend.</p>
         </div>
         <div class="pillar">
           <span class="pillar-num">03</span>
-          <h3>Institutional Quality</h3>
-          <p>Reports and recommendations meet the standards expected by boards, regulators, and international investors.</p>
+          <h3 data-i18n="p3_title">Institutional Quality</h3>
+          <p data-i18n="p3_desc">Reports and recommendations meet the standards expected by boards, regulators, and international investors.</p>
         </div>
         <div class="pillar">
           <span class="pillar-num">04</span>
-          <h3>Global Intelligence</h3>
-          <p>Fourteen offices means real-time local insight — not secondhand data — wherever your transaction lands.</p>
+          <h3 data-i18n="p4_title">Global Intelligence</h3>
+          <p data-i18n="p4_desc">62 offices means real-time local insight — not secondhand data — wherever your transaction lands.</p>
         </div>
       </div>
     </div>
@@ -200,48 +199,46 @@
   <section class="section" id="network">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Global Footprint</span>
-        <h2 class="section-title">One Network. Every Market.</h2>
-        <p class="section-desc">
+        <span class="section-tag" data-i18n="net_tag">Global Footprint</span>
+        <h2 class="section-title" data-i18n="net_title">One Network. Every Market.</h2>
+        <p class="section-desc" data-i18n="net_desc">
           Part of the DeHeng Group — a global advisory network with 47 offices
           across China and active presence on four continents.
         </p>
       </div>
 
-
-      <!-- ── Regions ── -->
       <div class="regions-grid">
         <div class="region region--china">
-          <span class="region-tag">China</span>
-          <p>47 offices · mainland China &amp; Hong Kong</p>
-          <button class="btn-see-cities" id="btn-china-modal">See All Cities</button>
+          <span class="region-tag" data-i18n="r_china_tag">China</span>
+          <p data-i18n="r_china_p">47 offices · mainland China &amp; Hong Kong</p>
+          <button class="btn-see-cities" id="btn-china-modal" data-i18n="r_china_btn">See All Cities</button>
         </div>
         <div class="region">
-          <span class="region-tag">Asia</span>
-          <p>Seoul · Tokyo · Singapore · Hanoi · Vientiane · Kuala Lumpur · Jakarta</p>
+          <span class="region-tag" data-i18n="r_asia_tag">Asia</span>
+          <p data-i18n="r_asia_p">Seoul · Tokyo · Singapore · Hanoi · Vientiane · Kuala Lumpur · Jakarta</p>
         </div>
         <div class="region">
-          <span class="region-tag">Middle East &amp; Central Asia</span>
-          <p>Dubai · Riyadh · Almaty</p>
+          <span class="region-tag" data-i18n="r_me_tag">Middle East &amp; Central Asia</span>
+          <p data-i18n="r_me_p">Dubai · Riyadh · Almaty</p>
         </div>
         <div class="region">
-          <span class="region-tag">Americas</span>
-          <p>New York · Silicon Valley</p>
+          <span class="region-tag" data-i18n="r_am_tag">Americas</span>
+          <p data-i18n="r_am_p">New York · Silicon Valley</p>
         </div>
         <div class="region">
-          <span class="region-tag">Europe</span>
-          <p>Paris · Brussels · The Hague</p>
+          <span class="region-tag" data-i18n="r_eu_tag">Europe</span>
+          <p data-i18n="r_eu_p">Paris · Brussels · The Hague</p>
         </div>
       </div>
     </div>
 
-    <!-- ── China Cities Modal ── -->
-    <div class="modal-overlay" id="china-modal" role="dialog" aria-modal="true" aria-label="China offices">
+    <!-- China Cities Modal -->
+    <div class="modal-overlay" id="china-modal" role="dialog" aria-modal="true">
       <div class="modal-box">
         <div class="modal-header">
           <div>
-            <h3 class="modal-title">China Offices</h3>
-            <span class="modal-count">47 cities</span>
+            <h3 class="modal-title" data-i18n="modal_title">China Offices</h3>
+            <span class="modal-count" data-i18n="modal_count">47 cities</span>
           </div>
           <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
         </div>
@@ -302,9 +299,9 @@
   <section class="section section--gray" id="cases">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Track Record</span>
-        <h2 class="section-title">Success Cases</h2>
-        <p class="section-desc">
+        <span class="section-tag" data-i18n="cases_tag">Track Record</span>
+        <h2 class="section-title" data-i18n="cases_title">Success Cases</h2>
+        <p class="section-desc" data-i18n="cases_desc">
           A selection of completed mandates. Client names are disclosed only
           with explicit consent; sector and outcome are always shared.
         </p>
@@ -313,53 +310,53 @@
 
         <div class="case-card">
           <div class="case-meta">
-            <span class="case-tag">Investment Consulting</span>
+            <span class="case-tag" data-i18n="case1_tag">Investment Consulting</span>
             <span class="case-year">2024</span>
           </div>
-          <h3 class="case-title">China–Korea Cross-Border Acquisition</h3>
-          <p class="case-desc">Advised a Chinese industrial conglomerate on the acquisition of a Korean mid-cap manufacturer. Coordinated due diligence across Beijing, Shanghai, and Seoul offices. Transaction closed within the mandated 90-day timeline.</p>
+          <h3 class="case-title" data-i18n="case1_title">China–Korea Cross-Border Acquisition</h3>
+          <p class="case-desc" data-i18n="case1_desc">Advised a Chinese industrial conglomerate on the acquisition of a Korean mid-cap manufacturer. Coordinated due diligence across Beijing, Shanghai, and Seoul offices. Transaction closed within the mandated 90-day timeline.</p>
           <div class="case-outcome">
-            <span class="outcome-label">Outcome</span>
-            <span class="outcome-val">Deal closed · USD 340M · 90 days</span>
+            <span class="outcome-label" data-i18n="outcome_label">Outcome</span>
+            <span class="outcome-val" data-i18n="case1_outcome">Deal closed · USD 340M · 90 days</span>
           </div>
         </div>
 
         <div class="case-card">
           <div class="case-meta">
-            <span class="case-tag">Due Diligence</span>
+            <span class="case-tag" data-i18n="case2_tag">Due Diligence</span>
             <span class="case-year">2024</span>
           </div>
-          <h3 class="case-title">Southeast Asia Fintech Investment DD</h3>
-          <p class="case-desc">Full-scope financial, legal, and regulatory due diligence for a Seoul-based PE fund evaluating a Series C fintech in Singapore. Identified material regulatory risk, enabling re-negotiated terms prior to close.</p>
+          <h3 class="case-title" data-i18n="case2_title">Southeast Asia Fintech Investment DD</h3>
+          <p class="case-desc" data-i18n="case2_desc">Full-scope financial, legal, and regulatory due diligence for a Seoul-based PE fund evaluating a Series C fintech in Singapore. Identified material regulatory risk, enabling re-negotiated terms prior to close.</p>
           <div class="case-outcome">
-            <span class="outcome-label">Outcome</span>
-            <span class="outcome-val">Risk mitigated · Terms revised · Investment proceeds</span>
+            <span class="outcome-label" data-i18n="outcome_label">Outcome</span>
+            <span class="outcome-val" data-i18n="case2_outcome">Risk mitigated · Terms revised · Investment proceeds</span>
           </div>
         </div>
 
         <div class="case-card">
           <div class="case-meta">
-            <span class="case-tag">Market Entry</span>
+            <span class="case-tag" data-i18n="case3_tag">Market Entry</span>
             <span class="case-year">2023</span>
           </div>
-          <h3 class="case-title">European Brand Korea Market Entry</h3>
-          <p class="case-desc">Structured the Korean market entry strategy for a German consumer goods brand, including distributor vetting, regulatory pathway mapping, and joint-venture partner selection. Frankfurt and Seoul offices co-led the mandate.</p>
+          <h3 class="case-title" data-i18n="case3_title">European Brand Korea Market Entry</h3>
+          <p class="case-desc" data-i18n="case3_desc">Structured the Korean market entry strategy for a German consumer goods brand, including distributor vetting, regulatory pathway mapping, and joint-venture partner selection. Frankfurt and Seoul offices co-led the mandate.</p>
           <div class="case-outcome">
-            <span class="outcome-label">Outcome</span>
-            <span class="outcome-val">JV established · Launch Q1 2024</span>
+            <span class="outcome-label" data-i18n="outcome_label">Outcome</span>
+            <span class="outcome-val" data-i18n="case3_outcome">JV established · Launch Q1 2024</span>
           </div>
         </div>
 
         <div class="case-card">
           <div class="case-meta">
-            <span class="case-tag">Transaction Support</span>
+            <span class="case-tag" data-i18n="case4_tag">Transaction Support</span>
             <span class="case-year">2023</span>
           </div>
-          <h3 class="case-title">Middle East Sovereign Fund Korea Real Estate</h3>
-          <p class="case-desc">Supported a Dubai-based sovereign wealth vehicle in deploying capital into Seoul commercial real estate. Managed Korean regulatory filings, local counsel coordination, and valuation benchmarking.</p>
+          <h3 class="case-title" data-i18n="case4_title">Middle East Sovereign Fund Korea Real Estate</h3>
+          <p class="case-desc" data-i18n="case4_desc">Supported a Dubai-based sovereign wealth vehicle in deploying capital into Seoul commercial real estate. Managed Korean regulatory filings, local counsel coordination, and valuation benchmarking.</p>
           <div class="case-outcome">
-            <span class="outcome-label">Outcome</span>
-            <span class="outcome-val">USD 180M deployed · Regulatory clearance secured</span>
+            <span class="outcome-label" data-i18n="outcome_label">Outcome</span>
+            <span class="outcome-val" data-i18n="case4_outcome">USD 180M deployed · Regulatory clearance secured</span>
           </div>
         </div>
 
@@ -371,24 +368,20 @@
   <section class="section" id="about">
     <div class="container about-inner">
       <div class="about-text">
-        <span class="section-tag">About DeHeng Korea</span>
-        <h2 class="section-title">Seoul's Window to a Global Group</h2>
-        <p>DeHeng Korea is the Korean terminal of the DeHeng Holding Group — a privately held global advisory and investment group with more than ten active offices spanning mainland China, Southeast Asia, Japan, the Middle East, Central Asia, Silicon Valley, Australia, New York, France, and Germany.</p>
-        <p>Founded to serve clients whose interests cross borders, we combine deep Korean market expertise with the intelligence, relationships, and execution capacity of one of Asia's most internationally networked holding groups.</p>
-        <p>Our team in Seoul works directly with office leads in every relevant jurisdiction — meaning your mandate draws on local knowledge, not just databases.</p>
+        <span class="section-tag" data-i18n="about_tag">About DeHeng Korea</span>
+        <h2 class="section-title" data-i18n="about_title">Seoul's Window to a Global Group</h2>
+        <p data-i18n="about_p1">DeHeng Korea is the Korean office of the DeHeng Group — established in 1993, a privately held global advisory and investment group with more than 60 active offices spanning mainland China, Southeast Asia, Japan, the Middle East, Central Asia, Silicon Valley, Australia, New York, France, and Germany.</p>
+        <p data-i18n="about_p2">Founded to serve clients whose interests cross borders, we combine deep Korean market expertise with the intelligence, relationships, and execution capacity of one of Asia's most internationally networked groups.</p>
+        <p data-i18n="about_p3">Our team in Seoul works directly with office leads in every relevant jurisdiction — meaning your mandate draws on local knowledge, not just databases.</p>
       </div>
       <div class="about-visual">
         <div class="about-badge">
-          <span class="badge-num">14+</span>
-          <span class="badge-text">Offices Worldwide</span>
+          <span class="badge-num">62+</span>
+          <span class="badge-text" data-i18n="badge1_text">Offices Worldwide</span>
         </div>
         <div class="about-badge about-badge--sm">
-          <span class="badge-num">4</span>
-          <span class="badge-text">Continents</span>
-        </div>
-        <div class="about-badge about-badge--sm">
-          <span class="badge-num">10+</span>
-          <span class="badge-text">Years of Group History</span>
+          <span class="badge-num">1993</span>
+          <span class="badge-text" data-i18n="badge2_text">Established</span>
         </div>
       </div>
     </div>
@@ -398,16 +391,16 @@
   <section class="section section--dark" id="contact">
     <div class="container contact-inner">
       <div class="contact-text">
-        <span class="section-tag section-tag--light">Get in Touch</span>
-        <h2 class="section-title section-title--light">Let's discuss your mandate.</h2>
-        <p class="contact-sub">Tell us your objective. We will respond within one business day with an initial scoping view — no commitment required.</p>
+        <span class="section-tag section-tag--light" data-i18n="contact_tag">Get in Touch</span>
+        <h2 class="section-title section-title--light" data-i18n="contact_title">Let's discuss your mandate.</h2>
+        <p class="contact-sub" data-i18n="contact_sub">Tell us your objective. We will respond within one business day with an initial scoping view — no commitment required.</p>
         <div class="contact-info">
           <div class="contact-item">
-            <span class="contact-label">Seoul Office</span>
+            <span class="contact-label" data-i18n="contact_office_label">Seoul Office</span>
             <span class="contact-val">Mapo-gu, Seoul, ROK</span>
           </div>
           <div class="contact-item">
-            <span class="contact-label">Email</span>
+            <span class="contact-label" data-i18n="contact_email_label">Email</span>
             <span class="contact-val">contact@deheng.co.kr</span>
           </div>
         </div>
@@ -415,24 +408,24 @@
       <form class="contact-form" id="contact-form">
         <div class="form-row">
           <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Your name" required />
+            <label for="name" data-i18n="form_name_label">Name</label>
+            <input type="text" id="name" data-i18n-ph="form_name_ph" placeholder="Your name" required />
           </div>
           <div class="form-group">
-            <label for="company">Company</label>
-            <input type="text" id="company" placeholder="Your company" />
+            <label for="company" data-i18n="form_company_label">Company</label>
+            <input type="text" id="company" data-i18n-ph="form_company_ph" placeholder="Your company" />
           </div>
         </div>
         <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="your@email.com" required />
+          <label for="email" data-i18n="form_email_label">Email</label>
+          <input type="email" id="email" data-i18n-ph="form_email_ph" placeholder="your@email.com" required />
         </div>
         <div class="form-group">
-          <label for="message">Brief Objective</label>
-          <textarea id="message" rows="4" placeholder="Describe your mandate or question in a few lines…" required></textarea>
+          <label for="message" data-i18n="form_msg_label">Brief Objective</label>
+          <textarea id="message" rows="4" data-i18n-ph="form_msg_ph" placeholder="Describe your mandate or question in a few lines…" required></textarea>
         </div>
-        <button type="submit" class="btn-primary btn-full">Send Inquiry</button>
-        <p class="form-note">We treat all inquiries as strictly confidential.</p>
+        <button type="submit" class="btn-primary btn-full" data-i18n="form_submit">Send Inquiry</button>
+        <p class="form-note" data-i18n="form_note">We treat all inquiries as strictly confidential.</p>
       </form>
     </div>
   </section>
@@ -445,13 +438,13 @@
         <span class="logo-text">DeHeng Korea</span>
       </div>
       <div class="footer-links">
-        <a href="#services">Services</a>
-        <a href="#network">Global Network</a>
-        <a href="#cases">Success Cases</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#network" data-i18n="nav_network">Global Network</a>
+        <a href="#cases" data-i18n="nav_cases">Success Cases</a>
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#contact" data-i18n="nav_contact">Contact Us</a>
       </div>
-      <p class="footer-copy">© 2026 DeHeng Korea. All rights reserved.</p>
+      <p class="footer-copy" data-i18n="footer_copy">© 2026 DeHeng Korea. All rights reserved.</p>
     </div>
   </footer>
 
