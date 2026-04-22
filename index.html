@@ -203,45 +203,186 @@
         <span class="section-tag">Global Footprint</span>
         <h2 class="section-title">One Network. Every Market.</h2>
         <p class="section-desc">
-          DeHeng Korea operates as a terminal of the DeHeng Holding Group —
-          a privately held advisory and investment group with active offices
-          across four continents.
+          Part of the DeHeng Group — a global advisory network with 47 offices
+          across China and active presence on four continents.
         </p>
       </div>
 
-      <div class="network-map-placeholder">
-        <div class="map-bg">
-          <!-- Simplified SVG world outline placeholder -->
-          <div class="map-label">Interactive Global Map</div>
-          <div class="map-dots">
-            <div class="map-dot" style="top:38%;left:72%" data-city="Seoul ★"></div>
-            <div class="map-dot" style="top:36%;left:68%" data-city="Beijing"></div>
-            <div class="map-dot" style="top:38%;left:70%" data-city="Shanghai"></div>
-            <div class="map-dot" style="top:52%;left:72%" data-city="Singapore"></div>
-            <div class="map-dot" style="top:37%;left:74%" data-city="Tokyo"></div>
-            <div class="map-dot" style="top:44%;left:59%" data-city="Dubai"></div>
-            <div class="map-dot" style="top:38%;left:17%" data-city="Silicon Valley"></div>
-            <div class="map-dot" style="top:38%;left:27%" data-city="New York"></div>
-            <div class="map-dot" style="top:36%;left:47%" data-city="Paris"></div>
-            <div class="map-dot" style="top:34%;left:50%" data-city="Frankfurt"></div>
-            <div class="map-dot" style="top:69%;left:78%" data-city="Sydney"></div>
-            <div class="map-dot" style="top:41%;left:60%" data-city="Almaty"></div>
-          </div>
-        </div>
+      <!-- ── Schematic World Map ── -->
+      <div class="map-wrap">
+        <svg class="world-svg" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" aria-label="DeHeng global office map">
+          <!-- Ocean -->
+          <rect width="1000" height="500" class="svg-ocean"/>
+          <!-- Grid lines -->
+          <g class="svg-grid">
+            <line x1="83"  y1="0" x2="83"  y2="500"/>
+            <line x1="167" y1="0" x2="167" y2="500"/>
+            <line x1="250" y1="0" x2="250" y2="500"/>
+            <line x1="333" y1="0" x2="333" y2="500"/>
+            <line x1="417" y1="0" x2="417" y2="500"/>
+            <line x1="500" y1="0" x2="500" y2="500"/>
+            <line x1="583" y1="0" x2="583" y2="500"/>
+            <line x1="667" y1="0" x2="667" y2="500"/>
+            <line x1="750" y1="0" x2="750" y2="500"/>
+            <line x1="833" y1="0" x2="833" y2="500"/>
+            <line x1="917" y1="0" x2="917" y2="500"/>
+            <line x1="0" y1="83"  x2="1000" y2="83"/>
+            <line x1="0" y1="167" x2="1000" y2="167"/>
+            <line x1="0" y1="250" x2="1000" y2="250"/>
+            <line x1="0" y1="333" x2="1000" y2="333"/>
+            <line x1="0" y1="417" x2="1000" y2="417"/>
+          </g>
+          <!-- Continents -->
+          <g class="svg-land">
+            <!-- Greenland -->
+            <path d="M328,35 L372,28 L405,38 L413,65 L398,90 L362,98 L330,82 L318,58 Z"/>
+            <!-- Iceland -->
+            <path d="M405,68 L422,63 L430,73 L422,83 L408,80 Z"/>
+            <!-- North America -->
+            <path d="M132,65 L185,56 L228,60 L265,78 L282,108 L285,150 L268,183 L245,202 L218,218 L200,240 L178,235 L160,215 L148,192 L136,162 L128,128 Z"/>
+            <!-- Cuba -->
+            <path d="M228,195 L250,192 L255,200 L235,205 Z"/>
+            <!-- South America -->
+            <path d="M215,242 L258,230 L282,258 L286,310 L272,363 L252,388 L228,386 L210,355 L205,308 L208,268 Z"/>
+            <!-- UK -->
+            <path d="M448,90 L458,82 L466,92 L460,108 L448,105 Z"/>
+            <!-- Ireland -->
+            <path d="M438,92 L445,88 L448,96 L442,102 Z"/>
+            <!-- Scandinavia -->
+            <path d="M488,58 L505,48 L522,55 L520,78 L502,88 L488,75 Z"/>
+            <!-- Europe mainland -->
+            <path d="M448,73 L488,68 L520,72 L545,85 L543,112 L525,132 L498,138 L468,133 L448,120 L440,98 Z"/>
+            <!-- Africa -->
+            <path d="M448,152 L467,145 L500,143 L528,150 L543,172 L547,225 L543,285 L522,348 L500,372 L478,375 L458,353 L443,312 L438,255 L440,200 Z"/>
+            <!-- Madagascar -->
+            <path d="M548,290 L555,278 L562,290 L558,318 L548,315 Z"/>
+            <!-- Arabia -->
+            <path d="M560,155 L598,150 L638,162 L658,185 L645,218 L615,228 L590,215 L565,195 L555,175 Z"/>
+            <!-- Asia mainland -->
+            <path d="M538,68 L618,58 L698,53 L775,56 L848,62 L900,70 L920,100 L918,138 L900,168 L875,198 L850,222 L825,248 L800,272 L772,280 L746,262 L720,250 L698,235 L668,220 L638,208 L610,193 L585,173 L563,152 L548,128 L538,95 Z"/>
+            <!-- Kamchatka -->
+            <path d="M900,70 L928,65 L948,88 L938,115 L918,120 L905,98 Z"/>
+            <!-- Korean peninsula -->
+            <path d="M848,140 L858,137 L864,148 L858,163 L845,160 L840,148 Z"/>
+            <!-- Japan Hokkaido -->
+            <path d="M882,126 L897,120 L905,130 L896,140 L880,137 Z"/>
+            <!-- Japan Honshu -->
+            <path d="M874,140 L892,133 L903,143 L900,166 L884,172 L873,158 Z"/>
+            <!-- Taiwan -->
+            <path d="M848,188 L855,183 L860,190 L855,200 L847,197 Z"/>
+            <!-- Hainan -->
+            <path d="M800,197 L812,193 L817,202 L808,210 L798,207 Z"/>
+            <!-- Indochina peninsula -->
+            <path d="M772,253 L793,258 L800,280 L792,302 L777,305 L764,282 Z"/>
+            <!-- Sri Lanka -->
+            <path d="M700,242 L707,238 L713,245 L707,253 L700,250 Z"/>
+            <!-- Philippines -->
+            <path d="M855,205 L865,198 L873,208 L865,225 L855,218 Z"/>
+            <!-- Sumatra -->
+            <path d="M760,268 L788,260 L800,273 L790,287 L762,280 Z"/>
+            <!-- Borneo -->
+            <path d="M792,268 L820,263 L833,278 L827,300 L803,305 L789,287 Z"/>
+            <!-- Java -->
+            <path d="M790,293 L822,287 L833,296 L820,305 L790,302 Z"/>
+            <!-- Sulawesi -->
+            <path d="M838,278 L848,268 L856,278 L848,295 L838,290 Z"/>
+            <!-- New Guinea -->
+            <path d="M848,280 L878,268 L890,280 L875,295 L848,293 Z"/>
+            <!-- Australia -->
+            <path d="M760,310 L812,302 L855,310 L873,333 L875,373 L853,395 L812,400 L773,385 L756,360 L752,330 Z"/>
+            <!-- New Zealand -->
+            <path d="M902,368 L912,360 L920,375 L910,388 L900,380 Z"/>
+          </g>
+
+          <!-- ── China office dots (small, dense cluster) ── -->
+          <g class="svg-cn-dots">
+            <circle cx="823" cy="139" r="2.2"/> <!-- Beijing -->
+            <circle cx="838" cy="163" r="2.2"/> <!-- Shanghai -->
+            <circle cx="815" cy="186" r="2.2"/> <!-- Guangzhou -->
+            <circle cx="817" cy="188" r="2.2"/> <!-- Shenzhen -->
+            <circle cx="848" cy="128" r="2.2"/> <!-- Changchun -->
+            <circle cx="826" cy="141" r="2.2"/> <!-- Tianjin -->
+            <circle cx="838" cy="142" r="2.2"/> <!-- Dalian -->
+            <circle cx="814" cy="172" r="2.2"/> <!-- Changsha -->
+            <circle cx="817" cy="165" r="2.2"/> <!-- Wuhan -->
+            <circle cx="843" cy="134" r="2.2"/> <!-- Shenyang -->
+            <circle cx="802" cy="155" r="2.5"/> <!-- Xi'an -->
+            <circle cx="807" cy="159" r="2.5"/> <!-- XHTZ (Xi'an High-Tech Zone, offset) -->
+            <circle cx="825" cy="148" r="2.2"/> <!-- Jinan -->
+            <circle cx="834" cy="166" r="2.2"/> <!-- Hangzhou -->
+            <circle cx="815" cy="154" r="2.2"/> <!-- Zhengzhou -->
+            <circle cx="796" cy="168" r="2.2"/> <!-- Chongqing -->
+            <circle cx="743" cy="128" r="2.2"/> <!-- Urumqi -->
+            <circle cx="831" cy="177" r="2.2"/> <!-- Fuzhou -->
+            <circle cx="830" cy="161" r="2.2"/> <!-- Nanjing -->
+            <circle cx="789" cy="165" r="2.2"/> <!-- Chengdu -->
+            <circle cx="785" cy="181" r="2.2"/> <!-- Kunming -->
+            <circle cx="826" cy="162" r="2.2"/> <!-- Hefei -->
+            <circle cx="813" cy="145" r="2.2"/> <!-- Taiyuan -->
+            <circle cx="815" cy="188" r="2.2"/> <!-- Zhuhai -->
+            <circle cx="835" cy="163" r="2.2"/> <!-- Suzhou -->
+            <circle cx="835" cy="172" r="2.2"/> <!-- Wenzhou -->
+            <circle cx="834" cy="162" r="2.2"/> <!-- Wuxi -->
+            <circle cx="815" cy="186" r="2.2"/> <!-- Dongguan -->
+            <circle cx="804" cy="199" r="2.2"/> <!-- Sanya -->
+            <circle cx="838" cy="167" r="2.2"/> <!-- Ningbo -->
+            <circle cx="818" cy="144" r="2.2"/> <!-- Shijiazhuang -->
+            <circle cx="801" cy="188" r="2.2"/> <!-- Nanning -->
+            <circle cx="822" cy="170" r="2.2"/> <!-- Nanchang -->
+            <circle cx="795" cy="143" r="2.2"/> <!-- Yinchuan -->
+            <circle cx="828" cy="179" r="2.2"/> <!-- Xiamen -->
+            <circle cx="788" cy="150" r="2.2"/> <!-- Lanzhou -->
+            <circle cx="796" cy="176" r="2.2"/> <!-- Guiyang -->
+            <circle cx="834" cy="150" r="2.2"/> <!-- Qingdao -->
+            <circle cx="806" cy="194" r="2.2"/> <!-- Haikou -->
+            <circle cx="822" cy="142" r="2.2"/> <!-- Xiongan -->
+            <circle cx="837" cy="146" r="2.2"/> <!-- Yantai -->
+            <circle cx="830" cy="180" r="2.2"/> <!-- Quanzhou -->
+            <circle cx="833" cy="162" r="2.2"/> <!-- Changzhou -->
+            <circle cx="805" cy="143" r="2.2"/> <!-- Yulin -->
+            <circle cx="810" cy="137" r="2.2"/> <!-- Hohhot -->
+            <circle cx="817" cy="188" r="2.2"/> <!-- Hong Kong -->
+            <circle cx="815" cy="189" r="2.2"/> <!-- Hengqin -->
+          </g>
+
+          <!-- ── International office dots ── -->
+          <g class="svg-intl-dots">
+            <circle cx="512" cy="105" r="3.2"/> <!-- The Hague -->
+            <circle cx="294" cy="137" r="3.2"/> <!-- New York -->
+            <circle cx="507" cy="113" r="3.2"/> <!-- Paris -->
+            <circle cx="514" cy="108" r="3.2"/> <!-- Brussels -->
+            <circle cx="654" cy="180" r="3.2"/> <!-- Dubai -->
+            <circle cx="161" cy="146" r="3.2"/> <!-- Silicon Valley -->
+            <circle cx="714" cy="130" r="3.2"/> <!-- Almaty -->
+            <circle cx="785" cy="200" r="3.2"/> <!-- Vientiane -->
+            <circle cx="888" cy="151" r="3.2"/> <!-- Tokyo -->
+            <circle cx="788" cy="246" r="3.2"/> <!-- Singapore -->
+            <circle cx="630" cy="181" r="3.2"/> <!-- Riyadh -->
+            <circle cx="797" cy="267" r="3.2"/> <!-- Jakarta -->
+            <circle cx="782" cy="242" r="3.2"/> <!-- Kuala Lumpur -->
+            <circle cx="794" cy="192" r="3.2"/> <!-- Hanoi -->
+          </g>
+
+          <!-- ── Seoul — our office (highlighted) ── -->
+          <circle class="svg-dot-seoul" cx="852" cy="146" r="5"/>
+          <text class="svg-seoul-label" x="858" y="141">Seoul ★</text>
+        </svg>
       </div>
 
+      <!-- ── Regions ── -->
       <div class="regions-grid">
-        <div class="region">
-          <span class="region-tag">Northeast Asia</span>
-          <p>Seoul · Beijing · Shanghai · Tokyo</p>
+        <div class="region region--china">
+          <span class="region-tag">China</span>
+          <p>47 offices · mainland China &amp; Hong Kong</p>
+          <button class="btn-see-cities" id="btn-china-modal">See All Cities</button>
         </div>
         <div class="region">
-          <span class="region-tag">Southeast Asia</span>
-          <p>Singapore + regional affiliates</p>
+          <span class="region-tag">Asia</span>
+          <p>Seoul · Tokyo · Singapore · Hanoi · Vientiane · Kuala Lumpur · Jakarta</p>
         </div>
         <div class="region">
           <span class="region-tag">Middle East &amp; Central Asia</span>
-          <p>Dubai · Almaty</p>
+          <p>Dubai · Riyadh · Almaty</p>
         </div>
         <div class="region">
           <span class="region-tag">Americas</span>
@@ -249,11 +390,69 @@
         </div>
         <div class="region">
           <span class="region-tag">Europe</span>
-          <p>Paris · Frankfurt</p>
+          <p>Paris · Brussels · The Hague</p>
         </div>
-        <div class="region">
-          <span class="region-tag">Oceania</span>
-          <p>Sydney</p>
+      </div>
+    </div>
+
+    <!-- ── China Cities Modal ── -->
+    <div class="modal-overlay" id="china-modal" role="dialog" aria-modal="true" aria-label="China offices">
+      <div class="modal-box">
+        <div class="modal-header">
+          <div>
+            <h3 class="modal-title">China Offices</h3>
+            <span class="modal-count">47 cities</span>
+          </div>
+          <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+        </div>
+        <div class="modal-cities">
+          <div class="city-item">北京<span>Beijing</span></div>
+          <div class="city-item">上海<span>Shanghai</span></div>
+          <div class="city-item">广州<span>Guangzhou</span></div>
+          <div class="city-item">深圳<span>Shenzhen</span></div>
+          <div class="city-item">长春<span>Changchun</span></div>
+          <div class="city-item">天津<span>Tianjin</span></div>
+          <div class="city-item">大连<span>Dalian</span></div>
+          <div class="city-item">长沙<span>Changsha</span></div>
+          <div class="city-item">武汉<span>Wuhan</span></div>
+          <div class="city-item">沈阳<span>Shenyang</span></div>
+          <div class="city-item">西安<span>Xi'an</span></div>
+          <div class="city-item">济南<span>Jinan</span></div>
+          <div class="city-item">杭州<span>Hangzhou</span></div>
+          <div class="city-item">郑州<span>Zhengzhou</span></div>
+          <div class="city-item">重庆<span>Chongqing</span></div>
+          <div class="city-item">乌鲁木齐<span>Urumqi</span></div>
+          <div class="city-item">福州<span>Fuzhou</span></div>
+          <div class="city-item">南京<span>Nanjing</span></div>
+          <div class="city-item">成都<span>Chengdu</span></div>
+          <div class="city-item">昆明<span>Kunming</span></div>
+          <div class="city-item">合肥<span>Hefei</span></div>
+          <div class="city-item">太原<span>Taiyuan</span></div>
+          <div class="city-item">珠海<span>Zhuhai</span></div>
+          <div class="city-item">苏州<span>Suzhou</span></div>
+          <div class="city-item">温州<span>Wenzhou</span></div>
+          <div class="city-item">无锡<span>Wuxi</span></div>
+          <div class="city-item">东莞<span>Dongguan</span></div>
+          <div class="city-item">三亚<span>Sanya</span></div>
+          <div class="city-item">宁波<span>Ningbo</span></div>
+          <div class="city-item">石家庄<span>Shijiazhuang</span></div>
+          <div class="city-item">南宁<span>Nanning</span></div>
+          <div class="city-item">南昌<span>Nanchang</span></div>
+          <div class="city-item">银川<span>Yinchuan</span></div>
+          <div class="city-item">厦门<span>Xiamen</span></div>
+          <div class="city-item">西安高新<span>XHTZ</span></div>
+          <div class="city-item">兰州<span>Lanzhou</span></div>
+          <div class="city-item">贵阳<span>Guiyang</span></div>
+          <div class="city-item">青岛<span>Qingdao</span></div>
+          <div class="city-item">海口<span>Haikou</span></div>
+          <div class="city-item">雄安<span>Xiongan</span></div>
+          <div class="city-item">烟台<span>Yantai</span></div>
+          <div class="city-item">泉州<span>Quanzhou</span></div>
+          <div class="city-item">常州<span>Changzhou</span></div>
+          <div class="city-item">榆林<span>Yulin</span></div>
+          <div class="city-item">呼和浩特<span>Hohhot</span></div>
+          <div class="city-item">香港<span>Hong Kong</span></div>
+          <div class="city-item">横琴<span>Hengqin</span></div>
         </div>
       </div>
     </div>

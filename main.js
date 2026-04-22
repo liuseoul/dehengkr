@@ -51,6 +51,27 @@ fadeEls.forEach(el => {
   fadeObs.observe(el);
 });
 
+// China cities modal
+const chinaModal   = document.getElementById('china-modal');
+const btnOpenModal = document.getElementById('btn-china-modal');
+const btnCloseModal = document.getElementById('modal-close');
+
+function openModal()  { chinaModal.classList.add('open');    document.body.style.overflow = 'hidden'; }
+function closeModal() { chinaModal.classList.remove('open'); document.body.style.overflow = ''; }
+
+btnOpenModal?.addEventListener('click', openModal);
+btnCloseModal?.addEventListener('click', closeModal);
+
+// Close on overlay click (outside modal-box)
+chinaModal?.addEventListener('click', e => {
+  if (e.target === chinaModal) closeModal();
+});
+
+// Close on Escape key
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && chinaModal.classList.contains('open')) closeModal();
+});
+
 // Contact form
 document.getElementById('contact-form')?.addEventListener('submit', e => {
   e.preventDefault();

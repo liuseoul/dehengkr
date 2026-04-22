@@ -415,85 +415,56 @@ img { display: block; max-width: 100%; }
   line-height: 1.7;
 }
 
-/* ── Network Map ─────────────────────────────────────────────────────── */
-.network-map-placeholder {
+/* ── SVG World Map ───────────────────────────────────────────────────── */
+.map-wrap {
   margin-bottom: 56px;
-}
-.map-bg {
-  position: relative;
-  height: 380px;
-  background: var(--gray-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
-  background-image:
-    radial-gradient(circle 1px at 50% 50%, var(--border) 1px, transparent 0);
-  background-size: 28px 28px;
+  background: #091509;
 }
-.map-label {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 0.75rem;
-  color: var(--border);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  pointer-events: none;
+.world-svg {
+  display: block;
+  width: 100%;
+  height: auto;
 }
-
-.map-dots { position: absolute; inset: 0; }
-
-.map-dot {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--gold);
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-  transition: transform 0.2s;
+.svg-ocean { fill: #091509; }
+.svg-grid line {
+  stroke: rgba(255,255,255,0.04);
+  stroke-width: 0.5;
 }
-.map-dot::before {
-  content: attr(data-city);
-  position: absolute;
-  bottom: calc(100% + 6px);
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  color: var(--text);
-  background: var(--white);
-  border: 1px solid var(--border);
-  padding: 4px 8px;
-  border-radius: var(--radius);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s;
+.svg-land path {
+  fill: var(--dark);
+  stroke: #1f5a1f;
+  stroke-width: 0.6;
 }
-.map-dot:hover { transform: translate(-50%, -50%) scale(1.5); }
-.map-dot:hover::before { opacity: 1; }
-
-.map-dot::after {
-  content: '';
-  position: absolute;
-  inset: -4px;
-  border-radius: 50%;
-  border: 1px solid var(--gold);
-  opacity: 0.4;
-  animation: pulse 2.5s ease-out infinite;
+/* China office dots — dense gold cluster */
+.svg-cn-dots circle {
+  fill: var(--gold);
+  opacity: 0.85;
+}
+/* International dots */
+.svg-intl-dots circle {
+  fill: var(--gold);
+  opacity: 0.7;
+}
+/* Seoul highlight */
+.svg-dot-seoul {
+  fill: var(--gold);
+  filter: drop-shadow(0 0 4px var(--gold));
+}
+.svg-seoul-label {
+  font-family: var(--font-body);
+  font-size: 7px;
+  font-weight: 600;
+  fill: var(--gold);
+  letter-spacing: 0.06em;
 }
 
-@keyframes pulse {
-  0%   { transform: scale(1); opacity: 0.4; }
-  100% { transform: scale(2.4); opacity: 0; }
-}
-
+/* ── Regions ─────────────────────────────────────────────────────────── */
 .regions-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 2px;
   background: var(--border);
   border: 1px solid var(--border);
@@ -501,6 +472,12 @@ img { display: block; max-width: 100%; }
 .region {
   background: var(--white);
   padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.region--china {
+  background: #f7f5f0;
 }
 .region-tag {
   display: block;
@@ -509,12 +486,122 @@ img { display: block; max-width: 100%; }
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 8px;
 }
 .region p {
   font-size: 0.8rem;
   color: var(--muted);
   line-height: 1.6;
+  flex: 1;
+}
+
+/* See All Cities button */
+.btn-see-cities {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: none;
+  border: 1px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+}
+.btn-see-cities:hover {
+  background: var(--gold);
+  color: var(--white);
+}
+
+/* ── China Cities Modal ──────────────────────────────────────────────── */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(9,21,9,0.75);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.modal-overlay.open { display: flex; }
+
+.modal-box {
+  background: var(--white);
+  border-radius: var(--radius);
+  width: 100%;
+  max-width: 720px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.4);
+}
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 28px 32px 20px;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.modal-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.modal-count {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: var(--radius);
+  transition: background 0.15s;
+  flex-shrink: 0;
+}
+.modal-close:hover { background: var(--gray-bg); }
+
+.modal-cities {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2px;
+  background: var(--border);
+  overflow-y: auto;
+  flex: 1;
+}
+.city-item {
+  background: var(--white);
+  padding: 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text);
+}
+.city-item span {
+  font-size: 0.68rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1); opacity: 0.4; }
+  100% { transform: scale(2.4); opacity: 0; }
 }
 
 /* ── Cases ───────────────────────────────────────────────────────────── */
@@ -768,6 +855,7 @@ img { display: block; max-width: 100%; }
   .services-grid { grid-template-columns: 1fr; }
   .pillars-grid { grid-template-columns: repeat(2, 1fr); gap: 36px; }
   .regions-grid { grid-template-columns: repeat(3, 1fr); }
+  .modal-cities { grid-template-columns: repeat(4, 1fr); }
   .about-inner { grid-template-columns: 1fr; gap: 48px; }
   .about-visual { flex-direction: row; flex-wrap: wrap; }
   .about-badge { flex: 1; min-width: 160px; }
@@ -798,12 +886,14 @@ img { display: block; max-width: 100%; }
   .contact-inner { grid-template-columns: 1fr; gap: 48px; }
   .form-row { grid-template-columns: 1fr; }
   .regions-grid { grid-template-columns: repeat(2, 1fr); }
+  .modal-cities { grid-template-columns: repeat(3, 1fr); }
   .pillars-grid { grid-template-columns: 1fr; }
   .hero-title { font-size: 2.4rem; }
 }
 
 @media (max-width: 480px) {
   .regions-grid { grid-template-columns: 1fr; }
+  .modal-cities { grid-template-columns: repeat(2, 1fr); }
   .stats-grid { grid-template-columns: 1fr; }
   .stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.06); }
 }
