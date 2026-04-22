@@ -1,4 +1,4 @@
-// ── Translations ─────────────────────────────────────────────────────────────
+// ── Translations ──────────────────────────────────────────────────────────────
 const T = {
   en: {
     nav_services: 'Services',
@@ -6,17 +6,14 @@ const T = {
     nav_cases:    'Success Cases',
     nav_about:    'About',
     nav_contact:  'Contact Us',
-
     hero_eyebrow: 'Investment & Business Advisory · Seoul',
     hero_title:   'Precise counsel.<br />Global reach.<br /><em>Delivered on time.</em>',
     hero_sub:     'DeHeng Korea provides institutional-grade investment consulting and business due diligence, backed by a holding group spanning <strong>62 offices</strong> across four continents.',
     hero_cta:     'Start a Conversation',
     hero_ghost:   'Our Services ↓',
-
     stat_offices_label:  'Global Offices',
     stat_delivery_label: 'On-Time Delivery',
     stat_currency_label: 'Multi-Currency Advisory',
-
     svc_tag:   'What We Do',
     svc_title: 'Core Services',
     svc_desc:  'Every engagement is scoped precisely, staffed from the right offices, and delivered with a single accountable point of contact in Seoul.',
@@ -38,7 +35,6 @@ const T = {
     svc3_li2: 'Regulatory liaison (Korea, China, SEA)',
     svc3_li3: 'Post-merger integration',
     svc3_li4: 'Dispute resolution support',
-
     why_tag:   'Our Commitment',
     why_title: 'Why Clients Choose Us',
     p1_title: 'Client-First Scope',
@@ -49,7 +45,6 @@ const T = {
     p3_desc:  'Reports and recommendations meet the standards expected by boards, regulators, and international investors.',
     p4_title: 'Global Intelligence',
     p4_desc:  '62 offices means real-time local insight — not secondhand data — wherever your transaction lands.',
-
     net_tag:   'Global Footprint',
     net_title: 'One Network. Every Market.',
     net_desc:  'Part of the DeHeng Group — a global advisory network with 47 offices across China and active presence on four continents.',
@@ -66,7 +61,6 @@ const T = {
     r_eu_p:      'Paris · Brussels · The Hague',
     modal_title: 'China Offices',
     modal_count: '47 cities',
-
     cases_tag:   'Track Record',
     cases_title: 'Success Cases',
     cases_desc:  'A selection of completed mandates. Client names are disclosed only with explicit consent; sector and outcome are always shared.',
@@ -87,17 +81,15 @@ const T = {
     case4_title:   'Middle East Sovereign Fund Korea Real Estate',
     case4_desc:    'Supported a Dubai-based sovereign wealth vehicle in deploying capital into Seoul commercial real estate. Managed Korean regulatory filings, local counsel coordination, and valuation benchmarking.',
     case4_outcome: 'USD 180M deployed · Regulatory clearance secured',
-
     about_tag:   'About DeHeng Korea',
-    about_title: 'Seoul\'s Window to a Global Group',
+    about_title: "Seoul's Window to a Global Group",
     about_p1:    'DeHeng Korea is the Korean office of the DeHeng Group — established in 1993, a privately held global advisory and investment group with more than 60 active offices spanning mainland China, Southeast Asia, Japan, the Middle East, Central Asia, Silicon Valley, Australia, New York, France, and Germany.',
-    about_p2:    'Founded to serve clients whose interests cross borders, we combine deep Korean market expertise with the intelligence, relationships, and execution capacity of one of Asia\'s most internationally networked groups.',
+    about_p2:    "Founded to serve clients whose interests cross borders, we combine deep Korean market expertise with the intelligence, relationships, and execution capacity of one of Asia's most internationally networked groups.",
     about_p3:    'Our team in Seoul works directly with office leads in every relevant jurisdiction — meaning your mandate draws on local knowledge, not just databases.',
     badge1_text: 'Offices Worldwide',
     badge2_text: 'Established',
-
     contact_tag:          'Get in Touch',
-    contact_title:        'Let\'s discuss your mandate.',
+    contact_title:        "Let's discuss your mandate.",
     contact_sub:          'Tell us your objective. We will respond within one business day with an initial scoping view — no commitment required.',
     contact_office_label: 'Seoul Office',
     contact_email_label:  'Email',
@@ -111,7 +103,6 @@ const T = {
     form_msg_ph:          'Describe your mandate or question in a few lines…',
     form_submit:          'Send Inquiry',
     form_note:            'We treat all inquiries as strictly confidential.',
-
     footer_copy: '© 2026 DeHeng Korea. All rights reserved.',
   },
 
@@ -121,17 +112,14 @@ const T = {
     nav_cases:    '성공 사례',
     nav_about:    '회사 소개',
     nav_contact:  '문의하기',
-
     hero_eyebrow: '투자 및 비즈니스 자문 · 서울',
     hero_title:   '정확한 자문.<br />글로벌 네트워크.<br /><em>기한 내 완료.</em>',
     hero_sub:     '덕항 코리아는 4개 대륙에 걸쳐 <strong>62개 오피스</strong>를 보유한 그룹을 기반으로 기관급 투자 자문 및 비즈니스 실사 서비스를 제공합니다.',
     hero_cta:     '상담 시작하기',
     hero_ghost:   '서비스 보기 ↓',
-
     stat_offices_label:  '글로벌 오피스',
     stat_delivery_label: '기한 내 완료',
     stat_currency_label: '다중 통화 자문',
-
     svc_tag:   '주요 서비스',
     svc_title: '핵심 서비스',
     svc_desc:  '모든 업무는 정확하게 범위가 설정되고, 적합한 오피스에서 담당하며, 서울의 단일 책임자를 통해 납품됩니다.',
@@ -153,7 +141,6 @@ const T = {
     svc3_li2: '규제 연락 (한국, 중국, 동남아)',
     svc3_li3: '합병 후 통합',
     svc3_li4: '분쟁 해결 지원',
-
     why_tag:   '저희의 약속',
     why_title: '고객이 선택하는 이유',
     p1_title: '고객 우선 범위 설정',
@@ -164,10 +151,9 @@ const T = {
     p3_desc:  '보고서와 권고 사항은 이사회, 규제 기관 및 국제 투자자가 기대하는 수준을 충족합니다.',
     p4_title: '글로벌 인텔리전스',
     p4_desc:  '62개 오피스는 거래가 이루어지는 곳 어디서나 데이터베이스가 아닌 실시간 현지 인사이트를 제공합니다.',
-
     net_tag:   '글로벌 입지',
     net_title: '하나의 네트워크. 모든 시장.',
-    net_desc:  '덕항 코리아는 덕항 그룹의 일원입니다 — 중국 전역 47개를 포함한 4개 대륙 62개 오피스를 보유한 글로벌 자문 네트워크.',
+    net_desc:  '덕항 코리아는 덕항 그룹의 일원입니다 — 중국 47개를 포함한 4개 대륙 62개 오피스를 보유한 글로벌 자문 네트워크.',
     r_china_tag: '중국',
     r_china_p:   '47개 오피스 · 중국 본토 및 홍콩',
     r_china_btn: '전체 도시 보기',
@@ -181,7 +167,6 @@ const T = {
     r_eu_p:      '파리 · 브뤼셀 · 헤이그',
     modal_title: '중국 오피스',
     modal_count: '47개 도시',
-
     cases_tag:   '실적',
     cases_title: '성공 사례',
     cases_desc:  '완료된 위임 사항의 선별 목록입니다. 고객명은 명시적 동의 시에만 공개되며, 섹터와 결과는 항상 공유됩니다.',
@@ -202,7 +187,6 @@ const T = {
     case4_title:   '중동 국부펀드 한국 부동산 투자',
     case4_desc:    '두바이 소재 국부 투자 기관의 서울 상업 부동산 자본 투자 지원. 한국 규제 신청, 현지 법무 조정 및 가치 평가 벤치마킹 관리.',
     case4_outcome: 'USD 1.8억 투자 · 규제 승인 확보',
-
     about_tag:   '덕항 코리아 소개',
     about_title: '글로벌 그룹으로의 서울 창구',
     about_p1:    '덕항 코리아는 덕항 그룹의 한국 오피스입니다 — 1993년 설립되어 중국 본토, 동남아시아, 일본, 중동, 중앙아시아, 실리콘밸리, 호주, 뉴욕, 프랑스, 독일에 걸쳐 60개 이상의 활성 오피스를 보유한 사모 글로벌 자문 및 투자 그룹.',
@@ -210,7 +194,6 @@ const T = {
     about_p3:    '서울 팀은 모든 관련 법역의 오피스 담당자와 직접 협력합니다 — 귀하의 위임 사항이 데이터베이스가 아닌 현지 지식을 활용함을 의미합니다.',
     badge1_text: '전세계 오피스',
     badge2_text: '설립 연도',
-
     contact_tag:          '문의하기',
     contact_title:        '업무에 대해 논의해 보겠습니다.',
     contact_sub:          '목표를 알려주세요. 별도 약정 없이 초기 범위 검토로 영업일 기준 1일 이내에 응답드립니다.',
@@ -226,7 +209,6 @@ const T = {
     form_msg_ph:          '위임 사항이나 질문을 간략히 설명해 주세요…',
     form_submit:          '문의 보내기',
     form_note:            '모든 문의 사항은 엄격하게 기밀로 처리됩니다.',
-
     footer_copy: '© 2026 덕항 코리아. 모든 권리 보유.',
   },
 
@@ -236,17 +218,14 @@ const T = {
     nav_cases:    '成功案例',
     nav_about:    '关于我们',
     nav_contact:  '联系我们',
-
     hero_eyebrow: '投资与商业咨询 · 首尔',
     hero_title:   '精准咨询。<br />全球触达。<br /><em>如期交付。</em>',
     hero_sub:     '德恒韩国依托横跨四大洲<strong>62个办公室</strong>的集团背景，提供机构级投资咨询与商业尽职调查服务。',
     hero_cta:     '开始洽谈',
     hero_ghost:   '查看服务 ↓',
-
     stat_offices_label:  '全球办公室',
     stat_delivery_label: '准时交付',
     stat_currency_label: '多币种顾问',
-
     svc_tag:   '核心服务',
     svc_title: '我们的服务',
     svc_desc:  '每项业务精准界定范围，由合适的办公室团队承接，并通过首尔的单一负责人交付。',
@@ -268,7 +247,6 @@ const T = {
     svc3_li2: '监管联络（韩国、中国、东南亚）',
     svc3_li3: '并购后整合',
     svc3_li4: '争议解决支持',
-
     why_tag:   '我们的承诺',
     why_title: '客户选择我们的理由',
     p1_title: '以客户为中心',
@@ -279,7 +257,6 @@ const T = {
     p3_desc:  '报告与建议达到董事会、监管机构及国际投资者所期待的标准。',
     p4_title: '全球洞察',
     p4_desc:  '62个办公室意味着实时本地洞察——而非二手数据——无论您的交易落地何处。',
-
     net_tag:   '全球布局',
     net_title: '一个网络。覆盖每个市场。',
     net_desc:  '德恒韩国是德恒集团的成员——中国47个办公室，全球四大洲共62个办公室的全球顾问网络。',
@@ -296,7 +273,6 @@ const T = {
     r_eu_p:      '巴黎 · 布鲁塞尔 · 海牙',
     modal_title: '中国办公室',
     modal_count: '47个城市',
-
     cases_tag:   '业绩记录',
     cases_title: '成功案例',
     cases_desc:  '已完成委托的精选案例。客户名称仅在明确同意后披露；行业与结果始终共享。',
@@ -317,7 +293,6 @@ const T = {
     case4_title:   '中东主权基金韩国房地产投资',
     case4_desc:    '支持迪拜主权财富机构向首尔商业地产部署资金。管理韩国监管申报、本地法律协调及估值基准测试。',
     case4_outcome: '1.8亿美元部署 · 监管批准获取',
-
     about_tag:   '关于德恒韩国',
     about_title: '通向全球集团的首尔窗口',
     about_p1:    '德恒韩国是德恒集团的韩国分支机构——自1993年创立，集团横跨中国大陆、东南亚、日本、中东、中亚、硅谷、澳大利亚、纽约、法国和德国，拥有60余个活跃办公室。',
@@ -325,7 +300,6 @@ const T = {
     about_p3:    '首尔团队直接与各相关法域的办公室负责人协作——这意味着您的委托事项借助的是本地知识，而非数据库。',
     badge1_text: '全球办公室',
     badge2_text: '创立年份',
-
     contact_tag:          '联系我们',
     contact_title:        '探讨您的委托事项。',
     contact_sub:          '告诉我们您的目标。我们将在一个工作日内提供初步范围意见——无需任何承诺。',
@@ -341,103 +315,117 @@ const T = {
     form_msg_ph:          '请用几句话描述您的委托事项或问题…',
     form_submit:          '发送询盘',
     form_note:            '我们对所有询盘严格保密。',
-
     footer_copy: '© 2026 德恒韩国. 版权所有。',
   }
 };
 
-// ── Language switcher ─────────────────────────────────────────────────────────
+// ── Language apply ────────────────────────────────────────────────────────────
 function applyLang(lang) {
   const t = T[lang];
   if (!t) return;
 
-  // Plain text nodes
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.dataset.i18n;
-    if (t[key] !== undefined) el.textContent = t[key];
-  });
-
-  // HTML nodes (hero title, hero sub, etc.)
-  document.querySelectorAll('[data-i18n-html]').forEach(el => {
-    const key = el.dataset.i18nHtml;
-    if (t[key] !== undefined) el.innerHTML = t[key];
+  // Single loop — use innerHTML when translation contains tags, textContent otherwise
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    var val = t[key];
+    if (val === undefined) return;
+    if (val.indexOf('<') !== -1) {
+      el.innerHTML = val;
+    } else {
+      el.textContent = val;
+    }
   });
 
   // Placeholders
-  document.querySelectorAll('[data-i18n-ph]').forEach(el => {
-    const key = el.dataset.i18nPh;
+  document.querySelectorAll('[data-i18n-ph]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n-ph');
     if (t[key] !== undefined) el.placeholder = t[key];
   });
 
-  // Active button
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.lang === lang);
+  // Active button highlight
+  document.querySelectorAll('.lang-btn').forEach(function(btn) {
+    btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
   });
 
-  // html lang attribute
   document.documentElement.lang = lang;
-
-  // Persist
-  localStorage.setItem('dh_lang', lang);
+  try { localStorage.setItem('dh_lang', lang); } catch(e) {}
 }
 
-document.querySelectorAll('.lang-btn').forEach(btn => {
-  btn.addEventListener('click', () => applyLang(btn.dataset.lang));
-});
+// ── Boot ──────────────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', function() {
 
-// Load saved language
-applyLang(localStorage.getItem('dh_lang') || 'en');
-
-// ── Nav mobile toggle ─────────────────────────────────────────────────────────
-const toggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.nav-links');
-
-toggle?.addEventListener('click', () => navLinks.classList.toggle('open'));
-navLinks?.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('open'));
-});
-
-// ── Scroll fade-in ────────────────────────────────────────────────────────────
-const fadeEls = document.querySelectorAll(
-  '.service-card, .pillar, .case-card, .region, .stat'
-);
-const fadeObs = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = '1';
-      entry.target.style.transform = 'translateY(0)';
-      fadeObs.unobserve(entry.target);
-    }
+  // Wire language buttons
+  document.querySelectorAll('.lang-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      applyLang(btn.getAttribute('data-lang'));
+    });
   });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-fadeEls.forEach(el => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(20px)';
-  el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-  fadeObs.observe(el);
-});
+  // Apply saved or default language
+  applyLang(localStorage.getItem('dh_lang') || 'en');
 
-// ── China cities modal ────────────────────────────────────────────────────────
-const chinaModal    = document.getElementById('china-modal');
-const btnOpenModal  = document.getElementById('btn-china-modal');
-const btnCloseModal = document.getElementById('modal-close');
+  // ── Nav mobile toggle ───────────────────────────────────────────────────────
+  var toggle   = document.querySelector('.nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      navLinks.classList.toggle('open');
+    });
+  }
+  if (navLinks) {
+    navLinks.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() { navLinks.classList.remove('open'); });
+    });
+  }
 
-function openModal()  { chinaModal.classList.add('open');    document.body.style.overflow = 'hidden'; }
-function closeModal() { chinaModal.classList.remove('open'); document.body.style.overflow = ''; }
+  // ── Scroll fade-in ──────────────────────────────────────────────────────────
+  var fadeEls = document.querySelectorAll('.service-card, .pillar, .case-card, .region, .stat');
+  var fadeObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        fadeObs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-btnOpenModal?.addEventListener('click', openModal);
-btnCloseModal?.addEventListener('click', closeModal);
-chinaModal?.addEventListener('click', e => { if (e.target === chinaModal) closeModal(); });
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape' && chinaModal?.classList.contains('open')) closeModal();
-});
+  fadeEls.forEach(function(el) {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    fadeObs.observe(el);
+  });
 
-// ── Contact form ──────────────────────────────────────────────────────────────
-document.getElementById('contact-form')?.addEventListener('submit', e => {
-  e.preventDefault();
-  const btn = e.target.querySelector('button[type="submit"]');
-  btn.textContent = '✓';
-  btn.style.background = '#2a6b3c';
-  btn.disabled = true;
+  // ── China cities modal ──────────────────────────────────────────────────────
+  var chinaModal     = document.getElementById('china-modal');
+  var btnOpenModal   = document.getElementById('btn-china-modal');
+  var btnCloseModal  = document.getElementById('modal-close');
+
+  function openModal()  { chinaModal.classList.add('open');    document.body.style.overflow = 'hidden'; }
+  function closeModal() { chinaModal.classList.remove('open'); document.body.style.overflow = ''; }
+
+  if (btnOpenModal)  btnOpenModal.addEventListener('click', openModal);
+  if (btnCloseModal) btnCloseModal.addEventListener('click', closeModal);
+  if (chinaModal) {
+    chinaModal.addEventListener('click', function(e) {
+      if (e.target === chinaModal) closeModal();
+    });
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && chinaModal && chinaModal.classList.contains('open')) closeModal();
+  });
+
+  // ── Contact form ────────────────────────────────────────────────────────────
+  var form = document.getElementById('contact-form');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var btn = form.querySelector('button[type="submit"]');
+      btn.textContent = '✓';
+      btn.style.background = '#2a6b3c';
+      btn.disabled = true;
+    });
+  }
+
 });
